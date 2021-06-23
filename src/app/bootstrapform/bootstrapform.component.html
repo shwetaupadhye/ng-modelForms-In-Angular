@@ -1,0 +1,97 @@
+<div class="container">
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Name</span>
+      
+    </div>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username" [(ngModel)]="fname" aria-describedby="basic-addon1">
+    <br>
+    <p>{{ fname }}</p>
+  </div>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Lasst Name</span>
+      
+    </div>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username" [(ngModel)]="lname" aria-describedby="basic-addon1">
+    <p>{{ lname }}</p>
+  </div>
+  <br>
+  
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Email Id</span>
+    <input type="text" class="form-control" placeholder="Recipient's username" [(ngModel)]="email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+      <span class="input-group-text" id="basic-addon2">@example.com</span>
+    </div>
+    <p>{{ email }}</p>
+  </div>
+  <br>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Contact Number </span>
+      
+    </div>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username" [(ngModel)]="contact" aria-describedby="basic-addon1">
+    <p>{{ contact }}</p>
+  </div>
+<br>
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Address</span>
+    </div>
+    <textarea class="form-control" aria-label="With textarea" [(ngModel)]="address"></textarea>
+    <p>{{ address }}</p>
+  </div>
+<br>
+
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text"> Qualification</span>
+    <textarea class="form-control" aria-label="With textarea" [(ngModel)]="qualification"></textarea>
+  <label><input type="radio" [(ngModel)]="qualification" name="optradio" checked>MCA</label>
+  <p>{{ qualification }}</p>
+</div>
+<br>
+<br>
+
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text">College Name</span>
+  </div>
+  <textarea class="form-control" aria-label="With textarea" [(ngModel)]="clgname"></textarea>
+  <p>{{ clgname }}</p>
+</div>
+<br>
+<br>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Date Of Birth </span>
+      
+    </div>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username" [(ngModel)]="dateofbirth" aria-describedby="basic-addon1">
+    <p>{{ dateofbirth }}</p>
+  </div>  
+  
+  
+ <br>
+  <br>
+  
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Fees</span>
+    </div>
+    <input type="text" class="form-control" [(ngModel)]="fees" aria-label="Amount (to the nearest dollar)">
+    <div class="input-group-append">
+      <span class="input-group-text">.00</span>
+      <p>{{ fees }}</p>
+    </div>
+  </div>
+  
+  
+  </div>
+
+  <router-outlet></router-outlet>

@@ -1,0 +1,64 @@
+<div class="container">
+    <h2>Form Grid</h2>
+    
+    
+      <div class="row">
+        <div class="col">
+            <label for="formGroupExampleInput">Enter First Name</label>
+          <input type="text" class="form-control" id="fname" [(ngModel)]="fname"placeholder="Enter First Name" name="fname">
+          <p> {{fname}} </p>
+        </div>
+        <div class="col">
+            <label for="formGroupExampleInput">Enter Last Name</label>
+          <input type="text" class="form-control" placeholder="Enter Last Name"[(ngModel)]="lname" name="lname">
+          <p> {{lname}} </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+            <label for="formGroupExampleInput">Enter Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" [(ngModel)]="email"name="email">
+          <p> {{email}} </p>
+        </div>
+        <div class="col">
+            <label for="formGroupExampleInput">Enter Password</label>
+          <input type="password" class="form-control" placeholder="Enter password" [(ngModel)]="password" name="pswd">
+          <p> {{password}} </p>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Address</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Address1"[(ngModel)]="add1">
+        <p> {{add1}} </p>
+        <input type="text" class="form-control" placeholder="Address2"[(ngModel)]="add2">
+        <p> {{add2}} </p>
+      </div>  
+      <div class="form-row">
+        <div class="col-7">
+            <label for="formGroupExampleInput">your Location</label>
+          <input type="text" class="form-control" placeholder="City"[(ngModel)]="city">
+          <p> {{city}} </p>
+        </div>
+
+        <div class="col">
+            <label for="formGroupExampleInput">State</label>
+          <input type="text" class="form-control" placeholder="State" [(ngModel)]="state">
+          <p> {{state}} </p>
+        </div>
+        <div class="col">
+            <label for="formGroupExampleInput">Pin Code No</label>
+          <input type="text" class="form-control" placeholder="Zip"[(ngModel)]="pin">
+          <p> {{pin}} </p>
+        </div>
+      </div>
+      <div class="custom-file col-7">
+        <input type="file" class="custom-file-input" id="customFile" name="filename">
+        <label class="custom-file-label" for="customFile">Choose file</label>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary mt-3">Submit</button>
+   
+  </div>
+  <router-outlet></router-outlet>

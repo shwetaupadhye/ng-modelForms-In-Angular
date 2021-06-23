@@ -1,0 +1,16 @@
+.container{
+    border: solid blue 2px;
+    background-color: rgb(17, 17, 17);
+    color: cyan;
+    border-radius: 15px 50px; 
+}
+p{
+    color: deeppink;
+}
+button{
+    box-shadow: dodgerblue;
+    
+}
+button:hover{
+    background-color: hotpink;
+}

@@ -1,0 +1,13 @@
+*{
+    background-color: rgb(17, 17, 17);
+    color: blanchedalmond;
+    
+    
+
+}
+.container{
+    border: rgb(62, 231, 223)  solid 4px; 
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
